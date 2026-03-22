@@ -1,0 +1,48 @@
+body {
+    background-color: #01015a;
+    color: white;
+}
+
+h1, h3, h4 {
+    font-family: cursive;
+}
+
+#one {
+    font-size: 12px
+}
+
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: #F8E391;
+}
+
+a:hover {
+    color: lightblue;
+    font-size: 20px;
+}
+
+nav a {
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+nav, header, h3 {
+    text-align: center;
+}
+
+nav{
+    background-color: black;
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        padding: 40px;
+    }
+}
+
+#blog_one:target, #blog_three:target, #blog_five:target{
+    color:#F8E391;
+}

@@ -1,0 +1,36 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 10px 10px 10px;;
+    text-align: left;
+    border-collapse: collapse;
+    background-color: lightcoral;
+}
+
+tr:hover {
+    background-color: lightblue;
+}
+
+tr, td {
+    padding: 10px;
+}
+
+.prof {
+    padding-left: 50px;
+}
+
+tr, thead {
+    border-bottom: 1px solid black;
+    
+}
+
+.TU {
+    background-color: yellow;
+}
+
+#TableNotes {
+    margin: 5px;
+}

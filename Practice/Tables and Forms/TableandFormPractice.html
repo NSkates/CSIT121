@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_t.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "TableNotes">
+        <h1>Spring 2026 Semester Schedule</h1>   
+        <p>*Please note that the yellow rows are classes currently being taken in Towson University this semester. Class codes are different for this reason.</p>
+    </div> 
+    <table>
+        <thead>
+            <tr>
+                <th>Course Name</th>
+                <th>Course Number</th>
+                <th class="prof">Instructor's Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>College Composition II</td>
+                <td>ENGL 102</td>
+                <td class="prof">Jacqueline Scott</td>
+            </tr>
+            <tr>
+                <td>Web Standards</td>
+                <td>CSIT 121</td>
+                <td class="prof">Veronica Noone</td>
+            </tr>
+            <tr>
+                <td>Introduction to Information Assurance</td>
+                <td>CSIT 161</td>
+                <td class="prof">Michele Clements</td>
+            </tr>
+            <tr class="TU">
+                <td>Systems Analysis and Design</td>
+                <td>CIS 379</td>
+                <td class="prof">Dr. Suranjan Chakraborty</td>
+            </tr>
+            <tr class="TU">
+                <td>Data Organization</td>
+                <td>CIS 334</td>
+                <td class="prof">Dr. Yuanqiong Wang</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <form action="TableandFormPractice.html" method="post">
+        <h2>Feedback Form</h2>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <caption>This is required, to ensure you're not a robot.</caption>
+        <br><br>
+        <label for="comments">Comments:</label><br>
+        <textarea required id="comments" name="comments" maxlength="1600" placeholder="Please share your thoughts on your experience with this website!"></textarea>
+        <br><br>
+        <label for="range">Rating:</label>
+        <input type="range" id="range" name="range" min="1" max="5" value="3">
+        <br><br>
+        <label for="checkbox">Bonus Question! What's your favorite color from the following?</label>
+        <input type="radio" id="red" name="color" value="red">
+        <label for="red">Red</label>
+        <input type="radio" id="blue" name="color" value="blue">
+        <label for="blue">Blue</label>
+        <input type="radio" id="green" name="color" value="green">
+        <label for="green">Green</label>
+        <input type="radio" id="orange" name="color" value="orange">
+        <label for="orange">Orange</label>
+        <input type="radio" id="purple" name="color" value="purple">
+        <label for="purple">Purple</label>
+        <input type="radio" id="yellow" name="color" value="yellow">
+        <label for="yellow">Yellow</label>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <footer>
+        <p>Got any questions? Talk to me (Nicole) in person <i>or</i> <a href="mailto:st1125883@email.ccbcmd.edu">email me!</a></p>
+    </footer>
+</body>
+</html>

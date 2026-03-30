@@ -1,0 +1,42 @@
+body {
+    display:grid;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #DCE1E9;
+}
+
+header {
+    text-align: center;
+}
+
+a {
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 15%;
+
+}
+
+#tierh {
+    text-align: center;
+}
+
+th, td {
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+tr:hover th, tr:hover td {
+    background-color: #53D8FB;
+}
+
+th {
+    background-color: yellow;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+nav {
+    background-color: #D4AFB9;
+}

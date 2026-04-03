@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Little Pony</title>
+    <script>
+        function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</head>
+<body>
+    <h1>My Little Pony</h1>
+     <!--The Overlay-->
+    <nav id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay Content -->
+        <div class="overlay-content">
+            <a href="page1.html">Home</a>
+            <a href="img1.html">My Little Pony</a>
+            <a href="img2.html">Winx Club</a>
+            <a href="img3.html">The Owl House</a>
+        </div>
+    </nav>
+    <span onclick="openNav()">Explore My <strong>Favorites</strong> Here!</span>
+    <br>
+    <br>
+
+    <main>
+        <img src="images/princess_Luna_S5E4.png" alt="My Little Pony: Princess Luna">
+        <p>This is <b>Princess Luna</b> from My Little Pony! She's the co-leader of Equestria and her main job is to protect other ponies from nightmares, and lower and raise the moon.</p>
+        <p>Image file type: JPEG</p>
+        <p>I chose this image because it's my favorite shot from my favorite episode: <i>Do Princesses Dream of Magic Sheep? </i></p>
+    </main>
+    
+    <section class ="sources">
+        <h2>Sources</h2>
+        <p>Simple background [Collection of images]. (n.d.). Freepik. <a href="https://www.freepik.com/free-photos-vectors/simple-background" target="_blank">www.freepik.com/free-photos-vectors/simple-background</a> </p>
+        <p>Princess Luna. (n.d.). Wikipedia. In Wikipedia, The Free Encyclopedia. Retrieved March 15, 2026, from <a href="https://en.wikipedia.org/wiki/Princess_Luna" target="_blank">https://en.wikipedia.org/wiki/Princess_Luna</a></p>
+    </section>
+</body>
+</html>

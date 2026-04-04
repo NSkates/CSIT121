@@ -21,10 +21,11 @@ img {
 
 span {
     font-size: larger;
+    background-color: lightblue;
 }
 
 span:hover {
-    color: coral;
+    color: red;
     cursor: pointer;
 }
 

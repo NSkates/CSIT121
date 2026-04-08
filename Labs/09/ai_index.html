@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reads the XML data using JavaScript</title>
+    <meta charset="UTF-8">
+
+    <!-- CSS -->
+    <style>
+        body {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #7ce2af;
+        }
+
+        th {
+            background-color: #7c0f65;
+            color: white;
+        }
+
+        .button {
+            text-align: center;
+            padding: 20px;
+            border: 4px solid rgb(55, 12, 211);
+            background: rgba(20, 192, 4, 0.5);
+            color: rgb(230, 36, 78);
+            outline: none;
+            border-radius: 30px;
+            font-size: 30px;
+            width: 500px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            color: black;
+            background: white;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        let tableVisible = false;  // track the table state
+        let employeeData = "";     // store loaded XML table to avoid multiple requests
+
+        function toggleTable() {
+            const table = document.getElementById("employeeTable");
+            const button = document.getElementById("toggleButton");
+
+            if (tableVisible) {
+                // hide table
+                table.style.display = "none";
+                button.textContent = "Get Employee Data";
+                tableVisible = false;
+            } else {
+                if (!employeeData) {
+                    // load XML only the first time
+                    fetch("employee.xml")
+                        .then(response => response.text())
+                        .then(str => {
+                            let parser = new DOMParser();
+                            let xmlDoc = parser.parseFromString(str, "text/xml");
+                            employeeData = buildTable(xmlDoc);
+                            table.innerHTML = employeeData;
+                            table.style.display = "table";
+                            button.textContent = "Close Employee Data";
+                            tableVisible = true;
+                        })
+                        .catch(err => alert("Failed to load XML: " + err));
+                } else {
+                    // show previously loaded table
+                    table.style.display = "table";
+                    button.textContent = "Close Employee Data";
+                    tableVisible = true;
+                }
+            }
+        }
+
+        function buildTable(xmlDoc) {
+            let table = `<tr>
+                <th>Firstname</th><th>Lastname</th>
+                <th>Title</th><th>Division</th>
+                <th>Building</th><th>Room</th>
+            </tr>`;
+
+            const employees = xmlDoc.getElementsByTagName("employee");
+
+            for (let i = 0; i < employees.length; i++) {
+                table += `<tr>
+                    <td>${employees[i].getElementsByTagName("firstname")[0].textContent}</td>
+                    <td>${employees[i].getElementsByTagName("lastname")[0].textContent}</td>
+                    <td>${employees[i].getElementsByTagName("title")[0].textContent}</td>
+                    <td>${employees[i].getElementsByTagName("division")[0].textContent}</td>
+                    <td>${employees[i].getElementsByTagName("building")[0].textContent}</td>
+                    <td>${employees[i].getElementsByTagName("room")[0].textContent}</td>
+                </tr>`;
+            }
+
+            return table;
+        }
+    </script>
+</head>
+
+<body>
+    <button type="button" class="button" id="toggleButton" onclick="toggleTable()">
+        Get Employee Data
+    </button>
+
+    <table id="employeeTable" style="display:none"></table>
+</body>
+</html>

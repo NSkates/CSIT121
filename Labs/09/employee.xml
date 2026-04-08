@@ -70,7 +70,7 @@
         <title>Engineering Manager</title>
         <division>Materials</division>
         <building>327</building>
-        <room>21</room>
+        <room>23</room>
     </employee>
 
     <!--Code at least six additional entries in employees.
@@ -128,7 +128,7 @@
             <title>Operations Manager</title>
             <division>Operations</division>
             <building>106</building>
-            <room>30</room>
+            <room>39</room>
         </employee>
 
 </employees>

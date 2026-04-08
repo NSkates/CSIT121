@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<employees>
+    <employee id="be129">
+        <firstname>Jitendra</firstname>
+        <lastname>Kumar</lastname>
+        <title>Engineer</title>
+        <division>Materials</division>
+        <building>327</building>
+        <room>19</room>
+    </employee>
+    <employee id="be130">
+        <firstname>Amit</firstname>
+        <lastname>Kumar</lastname>
+        <title>Accountant</title>
+        <division>Accts Payable</division>
+        <building>326</building>
+        <room>14</room>
+    </employee>
+    <employee id="be131">
+        <firstname>Akash</firstname>
+        <lastname>Kumar</lastname>
+        <title>Engineering Manager</title>
+        <division>Materials</division>
+        <building>327</building>
+        <room>21</room>
+    </employee>
+    <employee id="be132">
+        <firstname>Aishwarya</firstname>
+        <lastname>Kulshrestha</lastname>
+        <title>Engineer</title>
+        <division>Materials</division>
+        <building>327</building>
+        <room>22</room>
+    </employee>
+    <employee id="be133">
+        <firstname>Sachin</firstname>
+        <lastname>Kumar</lastname>
+        <title>Engineer</title>
+        <division>Materials</division>
+        <building>327</building>
+        <room>24</room>
+    </employee>
+    <employee id="be134">
+        <firstname>Vikash</firstname>
+        <lastname>kumar</lastname>
+        <title>COO</title>
+        <division>Management</division>
+        <building>216</building>
+        <room>26</room>
+    </employee>
+    <employee id="be135">
+        <firstname>Suvam</firstname>
+        <lastname>Basak</lastname>
+        <title>Accountant</title>
+        <division>Accts Payable</division>
+        <building>326</building>
+        <room>30</room>
+    </employee>
+    <employee id="be136">
+        <firstname>Abhinav</firstname>
+        <lastname>kumar</lastname>
+        <title>COO</title>
+        <division>Management</division>
+        <building>216</building>
+        <room>32</room>
+    </employee>
+     <employee id="be137">
+        <firstname>DhanPal</firstname>
+        <lastname>Singh</lastname>
+        <title>Engineering Manager</title>
+        <division>Materials</division>
+        <building>327</building>
+        <room>21</room>
+    </employee>
+
+    <!--Code at least six additional entries in employees.
+    XML with unique employee IDs and associated data.-->
+    
+    <!--One-->
+         <employee id="be138">
+        <firstname>Maya</firstname>
+        <lastname>Thompson</lastname>
+        <title>Software Engineer</title>
+        <division>Information Technology</division>
+        <building>101</building>
+        <room>12</room>
+    </employee>
+    <!--Two-->
+     <employee id="be139">
+        <firstname>Rajesh</firstname>
+        <lastname>Patel</lastname>
+        <title>Data Analyst</title>
+        <division>Business Intelligence</division>
+        <building>102</building>
+        <room>15</room>
+    </employee>
+    <!--Three-->
+     <employee id="be140">
+        <firstname>Emily</firstname>
+        <lastname>Johnson</lastname>
+        <title>HR Manager</title>
+        <division>Human Resources</division>
+        <building>103</building>
+        <room>20</room>
+    </employee>
+    <!--Four-->
+     <employee id="be141">
+        <firstname>Michael</firstname>
+        <lastname>Smith</lastname>
+        <title>Marketing Specialist</title>
+        <division>Marketing</division>
+        <building>104</building>
+        <room>18</room>
+    </employee>
+    <!--Five-->
+        <employee id="be142">
+            <firstname>Sarah</firstname>
+            <lastname>Lee</lastname>
+            <title>Financial Analyst</title>
+            <division>Finance</division>
+            <building>105</building>
+            <room>25</room>
+        </employee>
+    <!--Six--> 
+        <employee id="be143">
+            <firstname>David</firstname>
+            <lastname>Wilson</lastname>
+            <title>Operations Manager</title>
+            <division>Operations</division>
+            <building>106</building>
+            <room>30</room>
+        </employee>
+
+</employees>

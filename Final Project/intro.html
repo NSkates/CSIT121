@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introductory Level Labs</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</head>
+<body>
+<main class="layout">
+    <div class="content">
+    <header>
+        <h1>Introductory Level Labs</h1>
+    </header>
+    <nav id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay Content -->
+        <div class="overlay-content">
+            <a href="index.html">About</a>
+            <a href="intro.html">Introductory Labs</a>
+            <a href="intermediate.html">Intermediate Labs</a>
+            <a href="standards.html">Standards Labs</a>
+        </div>
+    </nav>
+    <div class="section">
+    <span onclick="openNav()">Menu</span>
+    </div>
+    
+    <div class="section">
+        <p>This section features labs that cover the fundamentals of HTML and CSS. That being said, the labs are generally easy. Due to the labs (especially the early ones) generally lacking much structure and content, I set each lab to be viewed through the &lt;iframe&gt;. Please enjoy previewing each lab and observing the difficulty increasing as you scroll through this page. These labs were done in the first half of the semester.</p>
+        <p><strong>DISCLAIMER:</strong> There is a hyperlink showcased in three of these frames that leads to an <a href="https://www.khanacademy.org/computing/computer-programming/html-css" target="about_blank">external website</a>. Please do not click the hyperlink <strong>inside </strong>the frames or else the frame will show an error. If you do click it by accident though, it's easy to fix. Just refresh this page! If you want to access the website I claimed to have helped me so much in these pages, please click the hyperlink embedded in this paragraph!</p>
+        <p>That being said, fun fact: frames leading to errors upon clicking hyperlinks is pretty normal. This happens for the following reasons: </p>
+        <ul>
+            <li>Many big websites (such as Kahn Academy) disabled the ability to make their websites functional inside &lt;iframe&gt;!</li>
+            <li>To prevent hackers from abusing this tag</li>
+            <li>Some companies have policies that prevent embedding their content as a whole</li>
+        </ul>
+    </div>
+
+    <div id="intro_labs">
+        <iframe src="https://nskates.github.io/CSIT121/Labs/01/aboutme.html"></iframe>
+        <iframe src="https://nskates.github.io/CSIT121/Labs/02/index.html"></iframe>
+        <br>
+        <iframe src="https://nskates.github.io/CSIT121/Labs/03/index.html"></iframe>
+        <iframe src="https://nskates.github.io/CSIT121/Labs/04/page1.html"></iframe>
+        <br>
+        <iframe src="https://nskates.github.io/CSIT121/Labs/05/index.html"></iframe>
+        </div>
+    </div>
+    </main>
+    
+</body>
+</html>

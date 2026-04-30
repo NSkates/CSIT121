@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</head>
+<body>
+<main class="layout">
+    <div class="content">
+    <header>
+        <h1>Welcome!</h1>
+    </header>
+    <nav id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay Content -->
+        <div class="overlay-content">
+            <a href="index.html">About</a>
+            <a href="intro.html">Introductory Labs</a>
+            <a href="intermediate.html">Intermediate Labs</a>
+            <a href="standards.html">Standards Labs</a>
+        </div>
+    </nav>
+    <div class="section">
+    <span onclick="openNav()">Menu</span>
+    </div>
+    <div class="section">
+        <p>Hi, everyone! I want to give a warm welcome to my CSIT 121 portfolio, the class I took at CCBC in the spring 2026 semester.</p>
+    </div>
+
+    <section>
+        <h2>About Me</h2>
+        <p>My name is Nicole, and while I’m developing this website, I am a senior at CCBC, co-enrolled at Towson University, pursuing a Bachelor of Science in Computer Information Systems with a concentration in Data Analytics. Additionally, I am one of CCBC's Fresh Faces for this academic year. Besides learning HTML, CSS, and JavaScript, I’ve also learned Java and Python during my education. After this semester, I plan to focus fully on completing my remaining courses for my degree at Towson and, hopefully, work in tech as an analyst!
+</p>
+
+    <p>Outside of academia, I keep myself busy as a competitive figure skater! I’ve been skating for almost eleven years. I am privileged to continue pursuing this sport as I pursue my degree and represent my university in Towson’s competitive skating team! </p>
+    
+    <img id="freshFace" src="images/pfp.jpg" alt="Professional Headshot of Me, Taken from the Fresh Faces Photoshoot"/>
+</section>
+
+    <section>
+        <h2>About Portfolio</h2>
+        <p>This portfolio will feature all the labs I’ve completed in this class throughout the semester. I decided to showcase these labs, divided into sections on each page, that can be accessed in the navigation on the top left! I decided to split the labs into three sections, based on their skill level and the lesson’s “big picture.” These three sections are named: Introductory, Intermediate, and Standards. As you navigate the pages, they will further explain what that section entails. 
+</p>
+<p>For now, the table provided below indicates which section you may need to visit to view a lab. I hope you enjoy looking through my portfolio!</p>
+    <div class="section">
+        <table id="index">
+            <thead>
+                <tr>
+                    <th colspan="3">Labs</th>
+                </tr>
+                <tr id="titles">
+                    <th>Number</th>
+                    <th>Name</th>
+                    <th>Designated Page</th>
+                </tr>
+            </thead>
+            <!--Labs-->
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Web Publishing</td>
+                    <td>Introductory</td>
+                </tr>
+                <tr>
+                <td>2</td>
+                <td>HTML Basics</td>
+                <td>Introductory</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>CSS Basics</td>
+                <td>Introductory</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Visual Media Lab</td>
+                <td>Introductory</td>
+            </tr>
+                <tr>
+                <td>5</td>
+                <td>Layout Lab</td>
+                <td>Introductory</td>
+                </tr>
+            <tr>
+                <td>6</td>
+                <td>UI/UX Evaluation</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Table and Form Lab</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Interactive Menu</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>XML</td>
+                <td>Standards</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Standards Presentation</td>
+                <td>Standards</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+</div>
+</main>
+</body>
+</html>

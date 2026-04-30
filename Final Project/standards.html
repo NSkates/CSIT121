@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standards Labs</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</head>
+<body>
+<main class="layout">
+    <div class="content">
+    <header>
+        <h1>Standards Labs</h1>
+    </header>
+    <nav id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay Content -->
+        <div class="overlay-content">
+            <a href="index.html">About</a>
+            <a href="intro.html">Introductory Labs</a>
+            <a href="intermediate.html">Intermediate Labs</a>
+            <a href="standards.html">Standards Labs</a>
+        </div>
+    </nav>
+    <div class="section">
+    <span onclick="openNav()">Menu</span>
+    </div>
+
+    <div class="section">
+        <p>While this section is brief, it emphasizes the importance of ensuring the website you build is accessible to everyone and structuring your content to maintain organization. Given the amount of data featured in these labs, I decided it was best to link to external sources. When you click the appropriate prompt, which opens the lab’s link, you will be taken to a new tab. That way, if you choose to return to this page, you can easily exit that window first.</p>
+        <p>Enjoy!</p>
+    </div>
+
+        <div>
+        <table class="int_table">
+            <thead>
+                <tr>
+                    <th>Lab Number</th>
+                    <th>Lab Name</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9</td>
+                    <td>XML</td>
+                    <td><a href="https://nskates.github.io/CSIT121/Labs/09/index.html" target="about_blank">Access Lab 9 Here!</a></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Standards Presentation</td>
+                    <td><a href="https://nskates.github.io/CSIT121/Labs/10/index.html" target="about_blank">Access Lab 10 Here!</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+</main>
+    
+</body>
+</html>

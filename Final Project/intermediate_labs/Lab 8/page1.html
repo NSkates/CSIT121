@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4</title>
+
+    <script>
+        function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</head>
+<body>
+    <h1><b>Welcome!</b></h1>
+    <!--The Overlay-->
+    <nav id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay Content -->
+        <div class="overlay-content">
+            <a href="page1.html">Home</a>
+            <a href="img1.html">My Little Pony</a>
+            <a href="img2.html">Winx Club</a>
+            <a href="img3.html">The Owl House</a>
+            <a href="../../intermediate.html">Portfolio</a>
+        </div>
+    </nav>
+    <span onclick="openNav()">Explore My <strong>Favorites</strong> Here!</span>
+
+    <div>
+    <p> In this lab, we will explore the different webpages that utilizes images! 
+        I have showcased each image with a description, the file type, and the source. 
+        Each image will feature a favorite character from my childhood TV shows. 
+        I hope you enjoy! 
+    </p>
+    </div>
+
+    <div class="sources">
+    <h2>Source</h2>
+    <p>Simple background [Collection of images]. (n.d.). Freepik. <a href="https://www.freepik.com/free-photos-vectors/simple-background" target="_blank">www.freepik.com/free-photos-vectors/simple-background</a> </p>
+    
+    </div>
+
+</body>
+</html>

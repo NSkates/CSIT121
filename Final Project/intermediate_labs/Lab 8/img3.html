@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Owl House</title>
+    <script>
+        function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</head>
+<body>
+    <h1>The Owl House</h1>
+    <!--The Overlay-->
+    <nav id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay Content -->
+        <div class="overlay-content">
+            <a href="page1.html">Home</a>
+            <a href="img1.html">My Little Pony</a>
+            <a href="img2.html">Winx Club</a>
+            <a href="img3.html">The Owl House</a>
+            <a href="../../intermediate.html">Portfolio</a>
+        </div>
+    </nav>
+    <span onclick="openNav()">Explore My <strong>Favorites</strong> Here!</span>
+    <br>
+    <br>
+
+    <main>
+        <img src="images/lilith.png" alt="The Owl House: Lilith">
+        <p>This is <b>Lilith</b> from The Owl House! In this series, she started off as an antagonist but later came to the good side when she realized that who she was working for was evil. She's known as a huge people pleaser and a nerd!</p>
+        <p>Image file type: PNG</p>
+        <p>I chose this image because she's a complex character and this is my favorite character design of hers in the series.</p>
+    </main>
+    
+    <section class ="sources">
+        <h2>Sources</h2>
+        <p>Simple background [Collection of images]. (n.d.). Freepik. <a href="https://www.freepik.com/free-photos-vectors/simple-background" target="_blank">www.freepik.com/free-photos-vectors/simple-background</a> </p>
+        <p>ftvs-cm45. (2022). Lilith Clawthorne vector 2 [Digital art]. DeviantArt. <a href="https://www.deviantart.com/ftvs-cm45/art/Lilith-Clawthorne-Vector-2-907529096" target="_blank">www.deviantart.com/ftvs-cm45/art/Lilith-Clawthorne-Vector-2-907529096</a>  </p>
+    </section>
+</body>
+</html>

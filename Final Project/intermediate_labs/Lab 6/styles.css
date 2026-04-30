@@ -1,0 +1,17 @@
+body {
+    font-family: cursive;  
+}
+
+img {
+    float: right;
+    width: 70%;
+    height: 50%;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+div {
+    padding-right: 30px;
+}
